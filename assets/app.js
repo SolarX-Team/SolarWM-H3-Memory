@@ -29,7 +29,10 @@ function updateSection(){
   a.classList.toggle('active',active);
   if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
  });
- document.querySelectorAll('a[data-language]').forEach(a=>{a.href=(a.dataset.language==='en'?'index.html':'zh.html')+(window.scrollY>200?'#'+current.id:'');});
+ const intro=document.getElementById('video-overview');
+ const beforeArticle=sections[0].getBoundingClientRect().top>padding+(parseFloat(getComputedStyle(sections[0]).scrollMarginTop)||0)+2;
+ const languageAnchor=window.scrollY>200?'#'+(intro&&beforeArticle?intro.id:current.id):'';
+ document.querySelectorAll('a[data-language]').forEach(a=>{a.href=(a.dataset.language==='en'?'index.html':'zh.html')+languageAnchor;});
  scheduled=false;
 }
 function scheduleSectionUpdate(){if(!scheduled){scheduled=true;requestAnimationFrame(updateSection);}}
