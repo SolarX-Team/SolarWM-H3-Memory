@@ -1,6 +1,6 @@
-# SolarWM-H3 + Memory
+# SolarWM H3 + Memory
 
-[Read the blog](https://solarx-team.github.io/SolarWM-H3-Memory/) · [English](https://solarx-team.github.io/SolarWM-H3-Memory/en.html)
+[Read the blog](https://solarx-team.github.io/SolarWM-H3-Memory/) · [中文](https://solarx-team.github.io/SolarWM-H3-Memory/zh.html)
 
 Training Memory For Video World Model Is Easier Than You Think.
 
@@ -12,7 +12,7 @@ This repository contains the bilingual static blog and its public media assets. 
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/` (Chinese) or `http://localhost:8000/en.html` (English).
+Open `http://localhost:8000/` (English) or `http://localhost:8000/zh.html` (Chinese).
 
 ## Media
 

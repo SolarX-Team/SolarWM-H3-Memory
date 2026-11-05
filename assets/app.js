@@ -29,7 +29,7 @@ function updateSection(){
   a.classList.toggle('active',active);
   if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
  });
- document.querySelectorAll('a[data-language]').forEach(a=>{a.href=(a.dataset.language==='en'?'en.html':'index.html')+(window.scrollY>200?'#'+current.id:'');});
+ document.querySelectorAll('a[data-language]').forEach(a=>{a.href=(a.dataset.language==='en'?'index.html':'zh.html')+(window.scrollY>200?'#'+current.id:'');});
  scheduled=false;
 }
 function scheduleSectionUpdate(){if(!scheduled){scheduled=true;requestAnimationFrame(updateSection);}}
