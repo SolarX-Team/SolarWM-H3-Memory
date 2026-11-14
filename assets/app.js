@@ -32,7 +32,7 @@ function updateSection(){
  const intro=document.getElementById('video-overview');
  const beforeArticle=sections[0].getBoundingClientRect().top>padding+(parseFloat(getComputedStyle(sections[0]).scrollMarginTop)||0)+2;
  const languageAnchor=window.scrollY>200?'#'+(intro&&beforeArticle?intro.id:current.id):'';
- document.querySelectorAll('a[data-language]').forEach(a=>{a.href=(a.dataset.language==='en'?'index.html':'zh.html')+languageAnchor;});
+ document.querySelectorAll('a[data-language]').forEach(a=>{a.href=(a.dataset.language==='en'?'./':'zh.html')+languageAnchor;});
  scheduled=false;
 }
 function scheduleSectionUpdate(){if(!scheduled){scheduled=true;requestAnimationFrame(updateSection);}}
