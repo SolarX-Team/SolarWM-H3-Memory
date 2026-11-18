@@ -422,3 +422,10 @@ footer .repo-note { margin:8px 0 0; font-size:12px; }
   .stage-chart .stage-step .bar { transform:scaleX(1)!important; opacity:1!important; transition:none; }
   .stage-chart .stage-step .bar-label,.stage-chart .stage-step .bar-value { color:var(--ink)!important; }
 }
+
+/* SolarX-Team blog standard: the logo links to the team home page; the title next to it scrolls to the top. */
+.topbar .brand-group{display:flex;align-items:center;gap:9px;min-width:0;margin-right:auto}
+.topbar .brand-group .name{margin-right:0}
+.topbar .team-home{display:block;flex:none;border-radius:6px}
+footer .team a{text-decoration:underline;text-decoration-color:var(--strong-line)}
+footer .team a:hover{color:var(--ink);text-decoration-color:currentColor}
